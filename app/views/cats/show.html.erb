@@ -1,0 +1,19 @@
+<% @cat.attributes.each do |attribute, val| %>
+  <table>
+    <tr>
+      <th><%= attribute %></th>
+      <td><%= val%></td>
+    </tr>
+  </table>
+<% end %>
+
+<% @cat.requests.each do |request| %>
+  <table>
+    <tr>
+      <th><%= "Start Date" %></th>
+      <td><%= request.start_date%></td>
+      <th><%= "End Date" %></th>
+      <td><%= request.end_date%></td>
+    </tr>
+  </table>
+<% end %>
